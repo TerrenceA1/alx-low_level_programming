@@ -6,14 +6,19 @@
  */
 int main(void)
 {
-	char i;
-
-	char hexvalues[] = "123456789abcdef";
+	int i;
 
 		for (i = '0'; i < '16'; i++)
 		{
-			putchar(hexvalues[i]);
-	}
-	putchar('\n');
-	return (0);
+			if (i < 10)
+			{
+				 putchar (i + '0');
+			}
+			else
+			{
+				putchar (i - 10 + 'a');
+			}
+		}
+		putchar ('\n');
+		return (0);
 }
