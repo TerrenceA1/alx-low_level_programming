@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - a program that prints single numbers of base 10
  * return :(0) success
