@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - a program that prints single numbers of base 10
- * return :(0) success
+ *main-program entry point.
+ *Return:0 no error, non zero if error
  */
 int main(void)
 {
