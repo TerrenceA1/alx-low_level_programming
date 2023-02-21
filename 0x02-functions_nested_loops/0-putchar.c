@@ -1,9 +1,9 @@
 #include "main.h"
-
 /**
-*main-entry point of program to print _putchar.
-*Return:(0)success.
-*/
+ * main - prints _putchar
+ *
+ * Return: Always 0 in success
+ */
 int main(void)
 {
 	_putchar(95); /*95 is asci for _*/
