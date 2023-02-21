@@ -1,44 +1,23 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_times_table - Prints the times table of the n1,
- *                     from  0.
- * @n1: The value of the times table to be printed.
+ * print_to_98 - Prints all natural numbers from n to 98,
+ *               in order separated by a comma followed by a space.
+ * @n: The number to begin.
  */
-void print_times_table(int n1)
+void print_to_98(int n)
 {
-	int num1, mult1, prod1;
-
-	if (n1 >= 0 && n1 <= 15)
+	if (n >= 98)
 	{
-		for (num1 = 0; num1 <= n1; num1++)
-		{
-			_putchar('0');
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
+	}
 
-			for (mult1 = 1; mult1 <= n1; mult1++)
-			{
-				_putchar(',');
-				_putchar(' ');
-
-				prod1 = num1 * mult1;
-
-				if (prod1 <= 99)
-					_putchar(' ');
-				if (prod1 <= 9)
-					_putchar(' ');
-
-				if (prod1 >= 100)
-				{
-					_putchar((prod1 / 100) + '0');
-					_putchar(((prod1 / 10)) % 10 + '0');
-				}
-				else if (prod1 <= 99 && prod1 >= 10)
-				{
-					_putchar((prod1 / 10) + '0');
-				}
-				_putchar((prod1 % 10) + '0');
-			}
-			_putchar('\n');
-		}
+	else
+	{
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
 }
